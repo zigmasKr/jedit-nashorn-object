@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE DOCKABLES SYSTEM "dockables.dtd">
+<!--  -->
+<DOCKABLES>
+	<DOCKABLE NAME="nashornobject">
+		if (!jEdit.getProperty("options.nashorn-object.dockable-title").equals("")) {
+			jEdit.setProperty("nashornobject.title", jEdit.getProperty("options.nashorn-object.dockable-title"));
+		}
+		new nashornobj.NashornObjectPluginPanel();
+	</DOCKABLE>
+</DOCKABLES>
+

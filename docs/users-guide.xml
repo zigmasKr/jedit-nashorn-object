@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><book>
+	<bookinfo>
+		<title>Nashorn Object</title>
+		<author>
+			<personname id="pn1">
+				<firstname>Zigmantas</firstname><surname>Kry&#382;ius</surname>
+			</personname>
+		</author>
+	</bookinfo>
+	<chapter id="overview"><title>Overview</title>
+		<para>
+			The Nashorn Object Plugin (<code>NashornObject.jar</code>) is a demo plugin showing how a Nashorn script can be rendered into
+			a jEdit plugin. The main part of the plugin's function is coded as a Nashorn script.
+		</para>
+		<para>
+			The Nashorn script <code>demo_script_object.js</code> comes with the plugin. For the plugin's start, this script should
+			be placed in the subfolder <code>scripts</code> of the jEdit settings folder.
+		</para>
+	</chapter>
+	<chapter id="use"><title>Use</title>
+		<para>
+			This plugin is for a (self-)educational purpose. The accompanying Nashorn script provides the Nashorn object, <code>ObjectDemo</code>, having two
+			methods: <code>demoBorderPanel</code> and <code>demoScrollerPanel</code>. This script is wrapped into a jEdit Plugin.
+		</para>
+		<para>
+			The Nashorn object, to which the script is evaluated, is cast to <code>ScriptObjectMirror</code> type and then
+			<code>callMember</code> is applied. More details on the use of <code>ScriptObjectMirror</code> can be found in the official
+			Nashorn documentation, or elsewhere on the Internet:
+			</para>
+			<itemizedlist>
+			<listitem><para>
+			 <ulink id="oracle" type="http" url="https://docs.oracle.com/javase/8/docs/jdk/api/nashorn/jdk/nashorn/api/scripting/ScriptObjectMirror.html">https://docs.oracle.com/javase/8/docs/jdk/api/nashorn/jdk/nashorn/api/scripting/ScriptObjectMirror.html</ulink>,
+			</para>
+			</listitem>
+			<listitem><para>
+			 <ulink id="tutoriala" type="http" url="https://www.javatips.net/api/jdk.nashorn.api.scripting.scriptobjectmirror">https://www.javatips.net/api/jdk.nashorn.api.scripting.scriptobjectmirror</ulink>,
+			 </para>
+			 </listitem>
+			 <listitem><para>
+			 <ulink id="tutorialb" type="http" url="http://book2s.com/java/api/jdk/nashorn/api/scripting/scriptobjectmirror/isarray-0.html">http://book2s.com/java/api/jdk/nashorn/api/scripting/scriptobjectmirror/isarray-0.html</ulink>,
+			 </para>
+			 </listitem>
+			 <listitem><para>
+			 etc.
+			 </para>
+			 </listitem>
+		</itemizedlist>
+		<para>
+			Via the plugin's options, the user can change the path to the demo script or employ other Nashorn scripts and functions
+			(object methods) provided by them. The plugin code can be cloned to obtain more than one Nashorn object plugin under
+			different names and with different functionality.
+		</para>
+		<para>
+			With this approach to writing a Nashorn script for a jEdit plugin, the main idea is that a method of the script's object returned something usable
+			within jEdit. Then this method, with its possible arguments, is put into <code>callMember</code>.
+		</para>
+	</chapter>
+	<chapter id="contacts"><title>Contacts</title>
+		<para>
+			Author's contact: <email id="email">zigmas.kr@gmail.com</email>.
+		</para>
+	</chapter>
+</book>

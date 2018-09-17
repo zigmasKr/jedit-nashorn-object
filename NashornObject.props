@@ -1,0 +1,29 @@
+# plugin properties:
+plugin.nashornobj.NashornObjectPlugin.name=Nashorn Object
+plugin.nashornobj.NashornObjectPlugin.author=ZiKr
+plugin.nashornobj.NashornObjectPlugin.version=0.1
+plugin.nashornobj.NashornObjectPlugin.activate=defer
+
+# dependencies:
+plugin.nashornobj.NashornObjectPlugin.depend.0=jdk 1.8
+plugin.nashornobj.NashornObjectPlugin.depend.1=jedit 05.04.00.00
+plugin.nashornobj.NashornObjectPlugin.depend.2=plugin javascriptshell.JavaScriptShellPlugin 0.5.1
+
+# plugin HELP:
+plugin.nashornobj.NashornObjectPlugin.docs=docs/index.html
+# text appearing at the bottom of "Plugin Manager" window:
+plugin.nashornobj.NashornObjectPlugin.description=Plugin shows the Nashorn script object wrapped as the jEdit plugin.
+
+# menu settings:
+plugin.nashornobj.NashornObjectPlugin.menu-item=nashornobject
+nashornobject.label=Nashorn Object
+
+# Options:
+plugin.nashornobj.NashornObjectPlugin.option-pane=nashorn-object
+options.nashorn-object.label=Nashorn Object
+options.nashorn-object.code=new nashornobj.NashornObjectOptionPane();
+# empty string when plugin starts the first time:
+options.nashorn-object.dockable-title=
+# default title showing on plugin's dockable window:
+nashornobject.title=Nashorn Object
+
